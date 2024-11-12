@@ -89,7 +89,7 @@ Mark a task as done:
 ./task-cli mark 1 done
 ```
 
-Author
+### Author
 
 Developed by Yevhenii Demenko.
 Feel free to reach out on [LinkedIn](https://linkedin.com/in/demenkoeugene)
