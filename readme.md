@@ -13,7 +13,7 @@ https://roadmap.sh/projects/task-tracker
     - [Listing Tasks](#listing-tasks)
     - [Updating a Task](#updating-a-task)
     - [Marking Task Status](#marking-task-status)
-- [Author](#author)
+- [Author](#Author)
 
 ## Features
 

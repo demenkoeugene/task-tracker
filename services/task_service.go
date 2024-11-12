@@ -57,7 +57,10 @@ func UpdateTask(id int, newDescription string) {
 	for i, task := range tasks {
 		if task.Id == id {
 			tasks[i].UpdateDescription(newDescription)
-			utils.SaveTasks(tasks)
+			err := utils.SaveTasks(tasks)
+			if err != nil {
+				return
+			}
 			fmt.Println("Task updated successfully")
 			return
 		}
@@ -80,7 +83,10 @@ func MarkTask(id int, status string) {
 	for i, task := range tasks {
 		if task.Id == id {
 			tasks[i].UpdateStatus(models.TaskStatus(status))
-			utils.SaveTasks(tasks)
+			err := utils.SaveTasks(tasks)
+			if err != nil {
+				return
+			}
 			fmt.Printf("Task marked as %s\n", status)
 			return
 		}
